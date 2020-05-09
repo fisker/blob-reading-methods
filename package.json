@@ -26,6 +26,7 @@
     "text.mjs"
   ],
   "scripts": {
+    "build": "echo \"no build script\"",
     "clean": "run-p clean:*",
     "clean:dist": "del-cli dist",
     "dist": "run-p dist:*",
@@ -40,7 +41,9 @@
     "lint:markdown": "markdownlint \"**/*.md\" --ignore \"**/node_modules/**\"",
     "lint:package-json": "yarn run format:package-json --check",
     "lint:prettier": "prettier \"**/*.{css,html,js,cjs,mjs,json,less,md,scss,ts,vue,yaml,yml}\" --check",
-    "release": "run-s dist"
+    "release": "run-s dist",
+    "test": "echo \"no test yet\"",
+    "test-coverage": "echo \"no test yet\""
   },
   "config": {
     "commitizen": {
